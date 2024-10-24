@@ -38,7 +38,6 @@
             padding: 15px;
             text-decoration: none;
             font-weight: bold;
-            
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
@@ -48,35 +47,35 @@
         nav ul li ul {
             display: none;
             position: absolute;
-            background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
+            background-color: rgba(255, 255, 255, 0.9);
             list-style-type: none;
             padding: 10px 0;
             min-width: 180px;
             top: 100%;
             z-index: 999;
             text-align: left;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for dropdown */
-            border-radius: 15px; /* Curved box */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
         }
         nav ul li:hover ul {
             display: block;
         }
         nav ul li ul li {
             display: block;
-            margin-bottom: 5px; /* Spacing between each dropdown item */
+            margin-bottom: 5px;
         }
         nav ul li ul li a {
             display: block;
             padding: 10px 20px;
-            color: #000000; /* Dark text for dropdown items */
+            color: #000000;
             text-align: left;
             text-transform: capitalize;
             transition: background-color 0.3s ease, color 0.3s ease;
-            border-radius: 12px; /* Curved menu items */
+            border-radius: 12px;
             background-color: transparent;
         }
         nav ul li ul li a:hover {
-            background-color: #000000; /* Highlight background color */
+            background-color: #000000;
             color: white;
         }
 
@@ -125,15 +124,14 @@
         /* Button Styling */
         .service-button {
             position: absolute;
-            bottom: 150px; /* Position the button above the footer */
+            bottom: 150px;
             padding: 15px 30px;
             background-color: white;
             color: black;
             border: none;
-            border-radius: 25px; /* Oval shape */
+            border-radius: 25px;
             font-size: 1.2rem;
             cursor: pointer;
-           
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease;
             z-index: 1;
@@ -184,6 +182,54 @@
             line-height: 1.5;
         }
 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                text-align: left;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .service-button {
+                bottom: 100px;
+                font-size: 1rem;
+            }
+            section h1 {
+                font-size: 2rem;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            section h1 {
+                font-size: 1.5rem;
+            }
+            .service-button {
+                bottom: 80px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item {
+                padding: 15px;
+            }
+            .service-item h3 {
+                font-size: 1rem;
+            }
+            .service-item p {
+                font-size: 0.9rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -211,20 +257,15 @@
     </header>
 
     <section>
-        <!-- Video Background -->
         <video autoplay muted loop>
             <source src="https://raw.githubusercontent.com/ahmadjowharclt/ntouch/main/ab1%20(1).mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video> 
         <h1><img src="https://raw.githubusercontent.com/ahmadjowharclt/ntouch/main/title.png" alt="title" style="max-width: 450px;"></h1>
-        <!-- Oval-shaped Button -->
         <a href="#services" class="service-button">Services &#8594;</a>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
-        
-        <!-- 3x3 Grid of Services -->
         <div class="services-grid">
             <div class="service-item">
                 <h3>Construction</h3>
