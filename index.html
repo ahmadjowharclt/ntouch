@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTOUCH SYNDICATE LLP - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: white;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 0px;
+            text-align: left;
+        }
+        nav {
+            background-color: transparent;
+            padding: 10px;
+            text-align: right;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color:  #808080;
+        }
+        /* Dropdown Styles */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
+            list-style-type: none;
+            padding: 10px 0;
+            min-width: 180px;
+            top: 100%;
+            z-index: 999;
+            text-align: left;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for dropdown */
+            border-radius: 15px; /* Curved box */
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
+            margin-bottom: 5px; /* Spacing between each dropdown item */
+        }
+        nav ul li ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #000000; /* Dark text for dropdown items */
+            text-align: left;
+            text-transform: capitalize;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 12px; /* Curved menu items */
+            background-color: transparent;
+        }
+        nav ul li ul li a:hover {
+            background-color: #000000; /* Highlight background color */
+            color: white;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .social-icons a:hover {
+            color: #808080;
+        }
+
+        /* Styling for the video background */
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        section h1 {
+            z-index: 1;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* Button Styling */
+        .service-button {
+            position: absolute;
+            bottom: 150px; /* Position the button above the footer */
+            padding: 15px 30px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 25px; /* Oval shape */
+            font-size: 1.2rem;
+            cursor: pointer;
+           
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            z-index: 1;
+        }
+        .service-button:hover {
+            background-color: #808080;
+            color: white;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the Services Section */
+        #services {
+            padding: 40px 0;
+            background-color: #ffffff;
+            text-align: center;
+            color: white;
+        }
+
+        /* Grid Layout for Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            background-color: #333;
+        }
+        .service-item h3 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        .service-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="brandbon.html">Branding</a></li>
+                    <li><a href="amaze-holidays.html">Travel and Tourism</a></li>
+                    <li><a href="skill-trade.html">Manpower supply</a></li>
+                    <li><a href="ntouch-industrials.html">Manufacturing</a></li>
+                    <li><a href="amaze-pro.html">UAE PRO Services</a></li>
+                    <li><a href="import-export.html">Import/Export </a></li>
+                    <li><a href="castel-rock.html">Construction</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <img src="C:\Users\sanjiv\Desktop\ntouch\media\Syndicate.png" alt="BRANDBON Logo" style="max-width: 200px;">
+    </header>
+
+    <section>
+        <!-- Video Background -->
+        <video autoplay muted loop>
+            <source src="C:\Users\sanjiv\Desktop\sample\ab1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1><img src="C:\Users\sanjiv\Desktop\sample\title.png" alt="BRANDBON Logo" style="max-width: 450px;"></h1>
+        
+        <!-- Oval-shaped Button -->
+        <a href="#services" class="service-button">Services &#8594;</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        
+        <!-- 3x3 Grid of Services -->
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Construction</h3>
+                <p>Residential and commercial building construction, resort construction.</p>
+            </div>
+            <div class="service-item">
+                <h3>Branding</h3>
+                <p>Comprehensive branding solutions to enhance business visibility.</p>
+            </div>
+            <div class="service-item">
+                <h3>Travel and Tourism</h3>
+                <p>Customized travel packages and tourism services worldwide.</p>
+            </div>
+            <div class="service-item">
+                <h3>Import and Export</h3>
+                <p>Facilitation of international trade for various products.</p>
+            </div>
+            <div class="service-item">
+                <h3>Franchise Consulting</h3>
+                <p>Expert advice for franchise development and management.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manufacturing</h3>
+                <p>High-quality production services for various industries.</p>
+            </div>
+            <div class="service-item">
+                <h3>Business Consulting</h3>
+                <p>Strategic consulting for sustainable business growth.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manpower Supply</h3>
+                <p>Provision of skilled and unskilled labor for various sectors.</p>
+            </div>
+            <div class="service-item">
+                <h3>H.R. Management</h3>
+                <p>Complete human resource solutions for companies.</p>
+            </div>
+        </div>
+    </section>
+        
+    <footer>
+        <p>&copy; 2024 Ntouch Syndicate LLP. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
